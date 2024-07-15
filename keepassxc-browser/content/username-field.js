@@ -110,6 +110,7 @@ UsernameFieldIcon.prototype.createIcon = function(field) {
     const wrapper = document.createElement('div');
     wrapper.style.all = 'unset';
     wrapper.style.display = 'none';
+    wrapper.style.position = 'absolute';
     styleSheet.addEventListener('load', () => wrapper.style.display = 'block');
 
     this.shadowRoot = wrapper.attachShadow({ mode: 'closed' });
